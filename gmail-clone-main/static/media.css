@@ -1,0 +1,176 @@
+/* General Responsive Styling */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .nav_container {
+    gap: 30px;
+  }
+
+  .main_content .messages {
+    font-size: 14px;
+  }
+
+  .right-area ion-icon,
+  .right-area img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .search input {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    grid-template-columns: 220px 3fr 50px;
+  }
+
+  .nav_top span {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+
+  .right-area img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .aside_icons img {
+    height: 36px;
+  }
+
+  .search input {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 200px 2fr 50px;
+  }
+
+  .nav_container {
+    gap: 20px;
+  }
+
+  .main_content .messages {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .right-area {
+    gap: 5px;
+  }
+
+  .nav_middle ul li {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .search input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main-content main-content main-content"
+      "sidebar sidebar sidebar";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .nav_middle ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .nav_middle ul li {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .main_content {
+    margin-top: 0;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .messages {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .right-area,
+  .left-area,
+  .middle-area {
+    flex: none;
+    text-align: center;
+  }
+
+  .search {
+    flex-wrap: wrap;
+    padding: 2px;
+  }
+
+  .search input {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .aside_icons {
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .aside_icons img {
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav_middle ul li a {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .main_content .messages {
+    font-size: 12px;
+  }
+
+  .right-area img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .nav_top span {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+
+  .main_content .top {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .sort_numbers {
+    font-size: 11px;
+  }
+}
